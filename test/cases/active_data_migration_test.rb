@@ -35,7 +35,7 @@ class ActiveDataMigrationTest < Test::Unit::TestCase
             puts "Teardown: Dropping table #{table}"
             ActiveRecord::Base.connection.execute("drop table #{table}")
         }
-        assert 0, ActiveRecord::Base.connection.tables.size
+        assert_equal 0, ActiveRecord::Base.connection.tables.size
     end
 
     def test_data_migrations_do_not_overwrite_existing_migration_identifier
