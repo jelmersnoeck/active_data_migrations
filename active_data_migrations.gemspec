@@ -23,6 +23,5 @@ Gem::Specification.new do |s|
 
     s.add_development_dependency "activerecord"
     s.add_development_dependency "rails"
-    s.add_development_dependency "activerecord"
     s.add_development_dependency "sqlite3-ruby"
 end
